@@ -13,7 +13,7 @@
   - I will export UsersService in the users.module to make it visible outside of the module
 6. Auth module logic
   - will retrieve user and verify user and password
-  - local.strategy file for handling validation
+    - local.strategy file for a selected validation strategy (there are a lot of different strategies to validate user, e.g.       facebook, twitter, youtube ....) local is one of them
 7. App controller routes
   - I will guard routes for unauthenticated users ("local" is a default name, that can be changed via @UseGuards("some-name"))
 
