@@ -15,13 +15,12 @@
   - will retrieve user and verify user and password
   - local.strategy file for handling validation
 7. App controller routes
-  - I will guard routes for unauthicated users ("local" is a default name, that can be changed via @UseGuards("some-name"))
+  - I will guard routes for unauthenticated users ("local" is a default name, that can be changed via @UseGuards("some-name"))
 
-------
+
 at this point I can send 
   `{"username":"Pavel", "password":"pass" }`
 to http://localhost:3000/auth/login
-and receive the user with this login
-------
+and receive the user with his login
 
-  - LocalAuthGuard and its local-auth.guard.ts is the only to not write ("local) for AuthGuard all over
+  - LocalAuthGuard and its local-auth.guard.ts is the only to not write ("local") for AuthGuard all over
